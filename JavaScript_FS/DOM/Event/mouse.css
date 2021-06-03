@@ -1,0 +1,17 @@
+.addstyle{
+    font-size: 30px;
+    color: yellow;
+    font-style: italic;
+    border: 1px solid goldenrod;
+    background: teal;
+    text-align: center;
+}
+
+/* adding default style */
+.removestyle{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}

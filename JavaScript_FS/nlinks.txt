@@ -1,0 +1,78 @@
+FA
+
+https://www.javatpoint.com/javascript-array-every-method
+https://tylermcginnis.com/arrow-functions/
+https://www.javascripttutorial.net/es6/javascript-default-parameters/
+https://stackabuse.com/introduction-to-javascript-proxies-in-es6/
+https://ultimatecourses.com/blog/mastering-control-flow-promises-and-callbacks-to-async-and-await
+https://www.oreilly.com/library/view/you-dont-know/9781491905241/ch04.html
+https://blog.vanila.io/handling-concurrency-with-async-await-in-javascript-8ec2e185f9b4
+
+
+links:
+
+https://skillcrush.com/blog/projects-you-can-do-with-javascript/
+
+https://medium.com/@gaurav.pandvia/understanding-javascript-function-executions-tasks-event-loop-call-stack-more-part-1-5683dea1f5ec
+
+
+ setTimeout(function timer() {
+        console.log('You clicked the button!');    
+    }, 2000);
+});
+
+console.log("Hi!");
+
+setTimeout(function timeout() {
+    console.log("Click the button!");
+}, 5000);
+
+console.log("Welcome to loupe.");
+
+Local storage — The local storage uses the localStorage object to store data 
+                           for your entire website on a permanent basis.
+                           
+                      localStorage.setItem(key, value)==== stores the value associated with a key.
+                      localStorage.getItem(key)===== retrieves the value associated with the key.
+
+Session storage — The session storage uses the sessionStorage object to
+                               store data on a temporary basis, for a single browser window or tab.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

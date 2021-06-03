@@ -1,0 +1,49 @@
+Regular expressions may have flags that affect the search.
+
+There are only 6 of them in JavaScript:
+
+i===========With this flag the search is case-insensitive: no difference 
+                       between A and a (see the example below).
+
+g===========With this flag the search looks for all matches, 
+                        without it – only the first match is returned.
+
+m===========Multiline mode 
+
+s===========Enables “dotall” mode, that allows a dot . to match newline character \n 
+
+u===========Enables full unicode support. The flag enables correct processing of surrogate pairs.
+
+y===========“Sticky” mode: searching at the exact position in the text .
+
+
+
+
+
+
+
+
+
+
+Callbacks:
+
+A callback is a function that is to be executed after another function has finished executing,hence 
+the name 'call back'.
+the function that is passed as an argument is called a callback functions.
+these functions are called higher order functions.
+it is helpful in events.
+
+
+
+Recursion:
+
+A recursive function is a function that calls itself. And this technique is called recursion.
+
+
+
+
+
+
+
+
+

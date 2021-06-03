@@ -1,0 +1,221 @@
+default function arguments:
+
+Argument vs. Parameter.....?
+
+the parameters are what we specify in the function declaration.
+the arguments are what we pass in the function.
+
+eg:        function add(x,y) {
+             return x + y;
+             }
+
+             add(100,200);
+
+x and y are parameters of the function, and the values that we passed to the add() function ( 100 and 200) are arguments.
+
+
+In default function parameters,
+
+a parameter has a default value of undefined. It means that if you don’t pass the arguments to the function, 
+its parameters will have the default values of undefined
+
+sytx: function function_name(param1=value1,param2=value2,..) {
+         }
+
+
+
+
+
+
+
+
+
+
+Destructuring :
+
+there are two types of destructuring:  Array and the Object.
+
+Objects allow us to create a single entity that stores data items by key.
+Arrays allow us to gather data items into an ordered collection.
+
+
+
+
+
+The Array. find() method returns the value of the first element in 
+an array that passes a given test
+
+
+
+
+
+Array manipulation functions:
+
+the ways of new functions like :-
+Array.of(),
+Array.from(), 
+Array.find(), 
+Array.findIndex(),  
+Array.every(), 
+Array.some()
+
+These new functions make it easier to fill up arrays, or find data within them. 
+In addition to that it is now easier to work with specific keys and values in the array itself.
+
+spread operator (...)
+The spread operator “spreads” the values in an iterable (arrays, strings) 
+across zero or more arguments or elements.
+
+Rest Parameters:
+rest parameter (…), which is the same syntax as the spread operator, 
+we can pass an indefinite number of parameters to our function. 
+These parameters are available within our function as an array called args
+
+
+
+
+
+
+
+
+
+Symbols:
+
+The symbol is a new primitive type, a unique token that’s guaranteed never to clash with another symbol. 
+In this sense, you could think of symbols as a kind of UUID (universally unique identifier).
+
+There are three kinds of Symbols:
+
+1) User-defined symbols created with the Symbol function
+2) Globally-registered symbols created with the Symbol.for function
+3) Well-known symbols defined as static properties on the Symbol object
+
+let symbol = new Symbol() 
+
+
+
+
+Map Operator:
+
+==> Holds Key and Value pair.
+==> Diff Map  And Object..? 
+
+       In map any value can be used a key or a value.
+
+==> it can be used other than a string as a key.
+==>Key values can have same values.
+==>Need to iterate in order i.e it iterates elements in INSERTION ORDER.
+==> Value can be object.
+
+Constructor Function to build Map:-       new  Map();
+
+Differet methods in Map :-   set()  and   get() 
+
+
+
+SET Operator :
+
+==> Collection of Values.
+==> Can be of any type.
+==> Each value must be Unique.
+==> Duplicates are not allowed.
+
+Constructor Function to build Set:-       new  Set();
+
+Differet methods in Set :-   add()  and   has() 
+
+Properties of Set :- size
+
+
+
+
+
+PROMISES:-
+==> these are continuation events.
+==>it helps to exectue multiple async operation.
+==>That object promises to run one of two functions (passed as arguments) 
+   at some point in the future:
+
+resolve: a callback function run when processing successfully completes, and
+reject: an optional callback function run when a failure occurs.
+
+syntx:  
+
+var promise = new Promise();         
+                                                      or
+var promise = new Promise(function (resolve,reject) {
+                       if(all fine) {
+                       resolve(" ");
+                       }
+                else{
+                       reject(error("It Broke "));
+                       });
+                       return promise ;
+
+
+
+
+
+
+
+
+
+ASYNC AND AWAIT FLOW CONTROL :-
+
+==> Async function helps to deal with the asynchronous javascript
+==>Async and Await are the two keyboards.
+==> Async  keyword helps to create the Async()  function.
+==> Await  keyword is  used with the delay() function.
+
+
+
+
+PROXIES:
+
+==> helps to interact with objects
+==> The Proxy object is used to define the custom behaviour for the fundamental operations.  eg: assignment,enumeration
+==> proxies are like getters and setters
+==> they intercepts calls to attributes and methods of objects.
+
+==> Three terms used in proxies:  handler ,  traps  ,  targets.
+
+        handler :- place holder objects which contains traps (INTERCEPTORS)
+        traps     :- method that provide the property access (LIVE INSIDE HANDLER)
+        target    :- object which proxy virtualizes.{ }
+
+==>  Syntax:  let myProxy = new  Proxy( { }, handler);
+
+
+GENERATORS:-
+
+==> these are the new type of functions which allows us to pause function in 
+       middle of the Execution., Which will be resumed later.
+
+Syntax:  
+                  function* afunction() {
+                                                   yield ;
+                                                   }
+
+==> It returns the generator Object.
+==> these functions are built using the yield expressions.
+       ( each yield inside the generator functionis a stopping point before the next execution cycle starts.
+==> Each execution cycle is triggered by means of next()  method.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

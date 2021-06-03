@@ -1,0 +1,17 @@
+.add{
+    color: aqua;
+    border:2px solid darkmagenta;
+    font-size: 30px;
+    text-shadow: 4px 2px seagreen;
+    font-family: 'Times New Roman', Times, serif;
+     background:slategrey;
+    text-align: center;
+    padding: 20px;
+}
+
+.header{
+    padding: 30px;
+    color:skyblue;
+    font-size: 40px;
+    background: thistle;
+}

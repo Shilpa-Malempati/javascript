@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JSON</title>
+</head>
+<body>
+
+ 
+ <script>
+     //ex 1:
+     var myObj = {
+     name:"Amith",
+     age:25,
+     place:"Newyork"
+ }
+ 
+ //with stringify ()
+ var myjson = JSON.stringify(myObj);
+  console.log(typeof myjson);//string
+ console.log( myjson);
+document.write(myjson)
+ 
+ //with parse() method
+  var parsi = JSON.parse(myjson);
+  console.log(typeof parsi);//object
+  console.log( parsi);
+
+
+
+
+//ex 2
+//   const myObj = {
+//   name: 'Skip',
+//   age: 2,
+//   favoriteFood: 'Steak'
+// };
+
+// const myObjStr = JSON.stringify(myObj);
+
+// console.log(myObjStr);
+// // "{"name":"Skip","age":2,"favoriteFood":"Steak"}"
+
+// console.log(JSON.parse(myObjStr));
+// // Object {name:"Skip",age:2,favoriteFood:"Steak"}
+  
+ </script>   
+</body>
+</html>

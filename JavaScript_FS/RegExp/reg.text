@@ -1,0 +1,48 @@
+Regular expressions is a powerful way of doing search and replace in strings.
+
+RegExpression has :    Patterns and flags
+
+Regular expressions are patterns that provide a powerful way to search and
+replace in text.
+
+In JavaScript, they are available via the RegExp object, 
+as well as being integrated in methods of strings.
+
+Syntax:
+
+two syntaxes that can be used to create a regular expression object.
+1) regexp = new RegExp("pattern", "flags");
+   
+2) And the “short” one, using slashes "/":
+
+   regexp = /pattern/; // no flags
+   regexp = /pattern/gmi; // with flags g,m and i 
+
+
+
+Character Class
+
+A character class is a special notation that matches any symbol from a certain set.
+
+1) the “digit” class. It’s written as \d and corresponds to “any single digit”.
+\d (“d” is from “digit”)====A digit: a character from 0 to 9.
+
+2)\s (“s” is from “space”)
+A space symbol: includes spaces, tabs \t, newlines \n and few other rare characters, such as \v, \f 
+and \r.
+
+3)\w (“w” is from “word”)
+A “wordly” character: either a letter of Latin alphabet or a digit or an underscore _.
+ Non-Latin letters do not belong to \w.
+
+Eg:- \d\s\w means a “digit” followed by a “space character” followed by a “wordly character”, 
+      such as 1 a.
+
+
+
+
+
+
+
+
+

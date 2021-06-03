@@ -1,0 +1,115 @@
+Functions Examples:
+
+1) var userName = 'John';
+
+  function showMessage() {
+  userName = "Bob"; // (1) changed the outer variable
+
+  var message = 'Hello, ' + userName;
+  alert(message); 
+  }
+
+alert( userName ); // John before the function call
+
+showMessage();
+
+alert( userName ); // Bob, the value was modified by the function
+
+
+
+2) same variable name is declared then it shadows the outer one.
+
+   var userName = 'John';
+
+   function showMessage() {
+ 
+  var userName = "Bob"; // declare a local variable
+
+  var message = 'Hello, ' + userName; // Bob
+  alert(message);
+  }
+
+  // the function will create and use its own userName
+ showMessage();
+
+ alert( userName ); // John, unchanged, the function did not access the outer variable
+
+
+
+
+3)  functions with parameters and return values
+
+
+
+function checkAge(age) {
+  if (age >= 18) {
+    return true;
+  } else {
+    return confirm('Do you have permission from your parents?');
+  }
+}
+
+var age = prompt('How old are you?', 18);
+
+if ( checkAge(age) ) {
+  alert( 'Access granted' );
+} else {
+  alert( 'Access denied' );
+}
+
+1)querySelectoraAll()
+
+the most versatile method, elem.querySelectorAll(css) returns all elements inside elem matching the given CSS selector.
+
+
+2)querySelector()
+
+The call to elem.querySelector(css) returns the first element for the given CSS selector.
+
+In other words, the result is the same as elem.querySelectorAll(css)[0],
+but the latter is looking for all elements and picking one, 
+while elem.querySelector just looks for one. So it’s faster and also shorter to write.
+
+
+NOTE:
+
+*)elem.getElementsByTagName(tag):
+ looks for elements with the given tag and returns the collection of them. The tag parameter can also be a star "*" for “any tags”.
+
+*)elem.getElementsByClassName(className) 
+  returns elements that have the given CSS class.
+
+*)document.getElementsByName(name) 
+returns elements with the given name attribute, document-wide. very rarely used.
+
+
+
+javascript call stack:
+
+
+Javascript is a single threaded single concurrent language, meaning it can handle one task at a time or a piece of code at a time. 
+It has a single call stack which along with other parts like heap, 
+queue constitutes the Javascript Concurrency Model (implemented inside of V8). 
+
+
+A call stack is a mechanism for an interpreter (like the JavaScript interpreter in a web browser) to keep track of its place in a 
+script that calls multiple functions— what function is currently being run and what functions are called from within that function, etc
+
+steps:
+
+1. When a script calls a function, the interpreter adds it to the call stack and then starts carrying out the function.
+2.  Any functions that are called by that function are added to the call stack further up, and run where their calls are reached.
+3.  When the current function is finished, the interpreter takes it off the stack and resumes execution where it left off in the last code listing.
+4.  If the stack takes up more space than it had assigned to it, it results in a "stack overflow" error.
+
+
+link:https://developer.mozilla.org/en-US/docs/Glossary/Call_stack
+
+
+
+
+
+
+
+
+

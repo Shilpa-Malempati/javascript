@@ -1,0 +1,8 @@
+body {
+    background-image: url('./login-1203603__340.webp');
+    background-size: cover;
+}
+
+.card-body {
+    background-color: rgba(223, 113, 125,0.5);
+}

@@ -1,0 +1,300 @@
+for(arrays / strings)
+for in loop (array /object) => stores the index
+for of loop (array) => stores the value
+for each(arrays)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+objects: retrieve data using key
+clg(person.key )
+clg(person[key])
+note: in array gives index
+         in objects gives key
+
+
+*) oly named functions can be called frst before declarig.
+ctrl+k ctrl+s  =>   to see all shortcuts.
+ctrl + B => to open and close the page
+
+
+
+
+
+Hoisting:
+
+variable hoisting: 
+GV wrt var keyword is hoisted to top.
+eg:
+
+clg(name);
+var name ="priya";
+//undefined
+
+
+steps:(oly declaration is hoisted to the top)
+
+var  name;
+clg(name);
+var name = "priya";
+
+
+
+
+LV wrt var keyword is hoisted to top oly wrt function
+ i.e to the top of the function
+
+
+
+
+
+
+
+
+
+
+
+non static method is called by reference name. i.e hobbies.include
+static method by class name i.e. Array.isArray()
+
+includes method:
+non static method 
+takes two parameter includes(object to be searched,starting index)
+eg:hobbies.include('cooking',2);
+
+
+splice and slice
+
+
+
+
+
+filter method:(imp)
+(same like a for each method,but we need to return the value);
+=>it uses call back function
+=>functions has two parameters(value,index)
+=>return true/false
+=>if it return false i.e. no change
+=> returning true for filter method,creates a new array and
+value will be added for new array,
+
+
+
+map method:
+=> takes call back as parameter
+=>has two param(value,index)
+=>you can return anything
+=>if ur returning it creates a new array in map ,its value is pushed in to 
+new array
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+loupe javascript:
+
+to map using the multiple properties:
+
+objects.assign({ },item)    or 
+
+{... obect name}
+
+
+
+string methods:
+substring(start,end-1)
+substr(start index,length to count)
+trim(); it removes spaces from left and right sides (middle spaces are not removed)
+trimStart()
+trimEnd()
+trimRight()
+trimLeft()
+split()
+
+objects:
+
+=>location object represnts the url of the page. (window.location)
+
+
+
+
+
+
+
+
+
+DOM:
+=>whenever a browser page meets the html page it creates the DOM.
+=>to create the dynamic  html page.
+=>to manipulate the dom
+=>first,last child ,nxt and previous sibling,parent node,attribute,text content,
+node [elements in DOM]
+
+
+
+
+
+
+
+
+
+
+NOTE:
+(=>using dom use script tag within the body tag.)
+
+=>to get any element using id.(document.getElementById)
+=>to get any element using id,classname,tag name(querySelector).========== (returns oly first element)
+=>to get any element using id,classname,tag name(querySelectorAll).===(returns all  elements wrt to id class and tags)
+=> always the  first element will be returned.
+=>to get any element using classname.(document.getElementByClassName) =========== oly consider classnames
+=>getElementByTagName ================================================(here the tags matters)
+=>getElementByName =============== for the name attribute (it consider oly attribute not on tags)
+
+
+
+setTimeout():The method waits for a specified number 
+of milliseconds then executes the specified code. 
+
+setInterval(): The setInterval method is identical in syntax to setTimeout(). 
+The difference is that as well as firing after the specified delay, it will fire 
+again after the same delay,
+and will continue to fire at the specified interval until it is cancelled.
+
+
+
+*)Splice and Slice both are Javascript Array functions. 
+*)The splice() method returns the removed item(s) in an array and 
+*)slice() method returns the selected element(s) in an array, as a new array object. 
+*)The splice() method changes the original array and 
+*)slice() method doesn't change the original array.
+
+
+
+
+forEach(( callback( value, index) )),
+ isArray(),
+ includes( searchElement, fromIndex ), 	
+push(items), 
+pop(), 
+shift(), 
+unshift(items), 
+splice(start index, delete count, items), 
+slice( start index, end index), 
+join( separator ), 
+indexOf( searchElement, fromIndex ), 
+map(( callback( value, index) )),
+ filter(( callback( value, index) ))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DOM EVENTS:
+(click,mouse hover,type and scroll)
+
+=>Event (it is performed by user)
+=>Event Listener (handled by js engine)
+=>Event handler (it is nothing but functions)
+
+
+=>eg: of events:(onclick,onsubmit,onmouseover etcc...)
+Note:
+wen the event occurs EL will listen to event and calls EH
+
+
+
+
+
+
+
+
+
+
+
+set and get attribute:
+=>set takes key and value
+=>get takes only key
+
+
+Using addEventListener:
+
+addEventListener('event' , function(){} )
+
+NOTE:
+event should  be written without 'on'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
